@@ -1,5 +1,9 @@
-<?php
-
-echo "test";
-
-?>
+<html>
+ <head>
+   <title>test</title>
+   <body>
+     
+     test
+     
+   </body>
+</html>
