@@ -11,5 +11,5 @@ RewriteRule ^(.*)$ /mp3organizer/$1
 
 # Add trailing slash to directories within jekyll
 # This does not expose the internal URL.
-RewriteCond %{SCRIPT_FILENAME} -d
-RewriteRule ^mp3organizer/(.*[^/])$ https://610mobile.github.io/$1/ [R=301]
+#RewriteCond %{SCRIPT_FILENAME} -d
+#RewriteRule ^mp3organizer/(.*[^/])$ https://610mobile.github.io/$1/ [R=301]
