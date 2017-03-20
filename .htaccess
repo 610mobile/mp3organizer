@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 
 RewriteEngine On
-RewriteRule / https://610mobile.github.io/mp3organizer [R=301,L]
+RewriteRule ^mp3organizer/(.*)$ /$1 [R=301,NC,L]
  
 </IfModule>
