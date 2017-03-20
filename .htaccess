@@ -1,4 +1,3 @@
-### Secure wp-includes
 <IfModule mod_rewrite.c>
 
   RewriteEngine On
