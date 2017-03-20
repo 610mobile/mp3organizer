@@ -1,5 +1,0 @@
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_HOST} 610mobile.github\.io [NC]
-RewriteCond %{REQUEST_URI} ^/$
-RewriteRule ^(.*)$ /mp3organizer/$1 [L]
-</IfModule>
