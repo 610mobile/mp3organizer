@@ -1,6 +1,0 @@
-<IfModule mod_rewrite.c>
-
-RewriteEngine On
-RewriteRule ^mp3organizer/(.*)$ /$1 [R=301,NC,L]
- 
-</IfModule>
