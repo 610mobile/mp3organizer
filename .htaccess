@@ -1,19 +1,12 @@
+### Secure wp-includes
 <IfModule mod_rewrite.c>
 
-RewriteEngine On
-
-# Map http://www.example.com to /xxx.
-RewriteRule ^$ /mp3organizer/ [L]
-
-# Map http://www.example.com/x to /jekyll/x unless there is a x in the web root.
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !^/mp3organizer/
-RewriteRule ^(.*)$ /mp3organizer/$1
-
-# Add trailing slash to directories within jekyll
-# This does not expose the internal URL.
-#RewriteCond %{SCRIPT_FILENAME} -d
-#RewriteRule ^mp3organizer/(.*[^/])$ https://610mobile.github.io/$1/ [R=301]
-
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^mp3organizer/ - [F,L]
+  RewriteRule !^mp3organizer/ - [S=3]
+  RewriteRule ^mp3organizer/[^/]+\.php$ - [F,L]
+  RewriteRule ^mp3organizer/.+\.php - [F,L]
+  RewriteRule ^mp3organizer - [F,L]
+  
 </IfModule>
