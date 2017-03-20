@@ -3,10 +3,5 @@
 
   RewriteEngine On
   RewriteBase /
-  RewriteRule ^mp3organizer/ - [F,L]
-  RewriteRule !^mp3organizer/ - [S=3]
-  RewriteRule ^mp3organizer/[^/]+\.php$ - [F,L]
-  RewriteRule ^mp3organizer/.+\.php - [F,L]
-  RewriteRule ^mp3organizer - [F,L]
-  
+ 
 </IfModule>
